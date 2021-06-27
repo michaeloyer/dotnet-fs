@@ -8,10 +8,11 @@
     <ToolCommandName>fs</ToolCommandName>
     <PackageOutputPath>./nupkg</PackageOutputPath>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <Authors>Michael Oyer</Authors>
     <PackageId>DotNetTool.Fs</PackageId>
+    <Authors>Michael Oyer</Authors>
     <PackageLicenseFile>../LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageTags>F#;fsharp;dotnet;tool</PackageTags>
     <RepositoryUrl>git@github.com:michaeloyer/dotnet-fs.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
   </PropertyGroup>
