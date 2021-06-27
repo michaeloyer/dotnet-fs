@@ -2,11 +2,23 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <Version>0.0.1</Version>
     <OutputType>Exe</OutputType>
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>fs</ToolCommandName>
     <PackageOutputPath>./nupkg</PackageOutputPath>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Authors>Michael Oyer</Authors>
+    <PackageId>DotNetTool.Fs</PackageId>
+    <PackageLicenseFile>../LICENSE</PackageLicenseFile>
+    <RepositoryUrl>git@github.com:michaeloyer/dotnet-fs.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="$(PackageLicenseFile)" Pack="true" Visible="false" PackagePath="../"/>
+  </ItemGroup>
 
   <ItemGroup>
     <Compile Include="Main.fs" />
